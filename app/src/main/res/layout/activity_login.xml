@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#6d76b7">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/daire_numarasi"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isim">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="Daire Numarası"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/daire_numarasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isim">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="Blok Adı"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/blok_adi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </TextView>
+
+
+
+
+    <EditText
+        android:id="@+id/anahtar"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Kullanıcı Anahtarı"
+        android:textColorHint="#DCDCDC"
+        android:inputType="textVisiblePassword"
+        android:textAlignment="center"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/keyimage"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/key"
+        app:layout_constraintBottom_toBottomOf="@+id/anahtar"
+        app:layout_constraintStart_toStartOf="@+id/anahtar"
+        app:layout_constraintTop_toTopOf="@+id/anahtar">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/isim"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="            İsim Soyisim"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#DCDCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anahtar">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/userprofileimage"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/userprofil"
+        app:layout_constraintBottom_toBottomOf="@+id/isim"
+        app:layout_constraintTop_toTopOf="@+id/isim"
+        app:layout_constraintStart_toStartOf="@+id/isim" >
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/blok_adi"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textCapWords"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daire_numarasi">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/onayla"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/giris_button"
+        android:clickable="true"
+        android:text="@string/Onayla"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blok_adi">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="213dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/wr_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

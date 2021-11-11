@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servis Ayarı:"
+        android:background="#666"
+
+        android:textSize="15dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/button_scan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Cihaz Arama" />
+
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="@string/title_paired_devices"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:background="@color/black">
+
+        <ListView
+            android:id="@+id/new_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:stackFromBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/spinner_sabit"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="37dp"
+        >
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/edit_text_button"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Kapı İsmi"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/kayt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:text="Kaydet" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adress_view">
+
+    </TextView>
+
+</LinearLayout>

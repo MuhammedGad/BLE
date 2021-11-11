@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6d76b7"
+    tools:context=".AdminRegister">
+
+    <Button
+        android:id="@+id/adminRback"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/anahtarR"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Kullanıcı Anahtarı"
+        android:textAlignment="center"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#DCDCDC"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminRback">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/anahtarimage"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/key"
+        app:layout_constraintBottom_toBottomOf="@+id/anahtarR"
+        app:layout_constraintTop_toTopOf="@+id/anahtarR"
+        app:layout_constraintStart_toStartOf="@+id/anahtarR">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/EmailR"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="            E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#DCDCDC"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anahtarR">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/postaimage"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/emailimage"
+        app:layout_constraintStart_toStartOf="@+id/EmailR"
+        app:layout_constraintTop_toTopOf="@+id/EmailR"
+        app:layout_constraintBottom_toBottomOf="@+id/EmailR">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/PasswordR"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="            Şifre"
+        android:inputType="numberPassword"
+        android:textColor="#000"
+        android:textColorHint="#DCDCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailR">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imagekilit"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/kilitacmaimage"
+        app:layout_constraintBottom_toBottomOf="@+id/PasswordR"
+        app:layout_constraintTop_toTopOf="@+id/PasswordR"
+        app:layout_constraintStart_toStartOf="@+id/PasswordR">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/PasswordRonay"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="            Şifre Tekrar"
+        android:inputType="numberPassword"
+        android:textColorHint="#DCDCDC"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordR">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imagekey"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFF"
+        android:src="@drawable/kilitacmaimage"
+        app:layout_constraintStart_toStartOf="@+id/PasswordRonay"
+        app:layout_constraintTop_toTopOf="@+id/PasswordRonay"
+        app:layout_constraintBottom_toBottomOf="@+id/PasswordRonay">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/adminRegister"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/giris_button"
+        android:clickable="true"
+        android:text="Kayıt Ol"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordRonay">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="213dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/wr_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

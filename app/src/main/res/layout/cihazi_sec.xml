@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+
+
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autofillHints="@string/action_settings"
+        android:hint="Cihazin ismini giriniz"
+        android:textColor="#000"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:longClickable="false"
+        android:paddingLeft="20dp" />
+
+
+</LinearLayout>

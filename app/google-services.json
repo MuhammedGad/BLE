@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "888405489750",
+    "project_id": "blebutton-c5dda",
+    "storage_bucket": "blebutton-c5dda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888405489750:android:762c81ee7ee4727f12a3f7",
+        "android_client_info": {
+          "package_name": "com.tr.blebutton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888405489750-jjh7jpbgijlcrf1upp04qjd71ccr6e2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM7divLNa6LOUziZUNUPZex7IDLsoMEWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888405489750-jjh7jpbgijlcrf1upp04qjd71ccr6e2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
